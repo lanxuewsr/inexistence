@@ -737,7 +737,7 @@ function APT_UPGRADE() {
 
 function APT_UPGRADE_check() {
     if [[ ! -f /tmp/apt.update.$(date "+%Y%m%d") ]]; then
-#        APT_UPGRADE
+        APT_UPGRADE
     fi
 }
 
