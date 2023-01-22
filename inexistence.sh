@@ -3,13 +3,7 @@
 # https://github.com/lanxuewsr/inexistence
 # Author: Aniverse
 #
-# --------------------------------------------------------------------------------
-usage() {
-#    bash <(wget -qO- https://git.io/abcde)
-    bash <(curl -s https://raw.githubusercontent.com/lanxuewsr/inexistence/master/inexistence.sh)
-}
 
-# --------------------------------------------------------------------------------
 script_version=1.2.7.11
 script_update=2021.7.30
 script_name=inexistence
