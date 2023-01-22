@@ -691,7 +691,7 @@ function APT_UPGRADE() {
     rm -f /tmp/apt_status
     set_log_when_there_is_none
     [[ $APT_UPGRADE_SINGLE == 1 ]] && echo_task "Checking and performing updates to system ... "
-    apt_sources_add
+#    apt_sources_add
     DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" update  >> $OutputLOG 2>&1
     if [[ "$?" != 0 ]]; then
         echo "apt_update_failed=1" > /tmp/apt_status
