@@ -240,7 +240,7 @@ function preparation() {
         apt_sources_replace
         [[ $DISTROL == debian ]] && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 5C808C2B65558117 >> "$OutputLOG" 2>&1
     fi
-    apt_sources_add
+#    apt_sources_add
 
     # wget -nv https://mediaarea.net/repo/deb/repo-mediaarea_1.0-6_all.deb && dpkg -i repo-mediaarea_1.0-6_all.deb && rm -rf repo-mediaarea_1.0-6_all.deb
     APT_UPGRADE_SINGLE=1   APT_UPGRADE
